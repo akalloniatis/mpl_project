@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/form1.css">
+</head>
+<style>
+.signin{
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:10%;
+	margin-bottom:10%;
+	background-color:lightgrey;
+	padding:3%;
+	border-radius: 4px;
+}
+input[type=submit]{
+  background-color: #1610CA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:left;
+}
+
+input[type="text"], input[type="password"]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+</style>
+<body>
+
+<div class="everything">
+
+	<a class="logo" href="index.html">
+	<img alt="logo" src="./images/logo.png">
+	</a>
+	<img alt="moto" src="./images/moto.png">
+	<br>
+	<br>
+
+	<form action="search.html">
+		<button type="submit" class="search_button"><i class="fa fa-search"></i> Αναζήτηση Συγγραμμάτων</button>
+	</form>
+	<br>
+	<br>
+	<ul class="navbar">
+		<li><a class="active" href="index.html">Αρχική</a></li>
+		<li><a href="news.html">Ανακοινώσεις</a></li>
+		<li><a href="free.html">Διάθεση Δωρεάων Συγραμμάτων</a></li>
+		<li><a href="contact.html">Επικοινωνία</a></li>
+		<li><a href="about_us.html">Μάθετε για Εμάς</a></li>
+	</ul>
+	
+	<ul class="breadcrumb">
+		<li><a href="index.html">Αρχική</a></li>
+		<li><a href="students.html">Φοιτητές</a></li>
+		<li>Είσοδος Φοιτητή</li>
+	</ul>
+	<!---here-->
+	<div class="signin">
+	<h2>Είσοδος Φοιτητή</h2>
+	<label for="fname">Όνομα Χρήστη:</label><br>
+	<input type="text" id="fname" required><br>
+	<label for="pw">Κωδικός Πρόσβασης:</label><br>
+	<input type="password" id="password" required><br><br>
+	<a href="#forget">Ξεχάσατε τον κωδικό σας;</a><br><br><br>
+	<input type="submit" value="Είσοδος">
+	<br><br><br><br>
+	Νέος χρήστης;  <a href="student_form.html">Εγγραφή</a><br><br>
+	</div>
+	<!------>
+	
+	<br>
+	<br>
+	<img class="img" alt="sponsors2" src="./images/sponsors2.png" height="90",width="100000">
+	<img class="img" alt="sponsors" src="./images/sponsors.png">
+	
+</div>
+</body>
+</html>

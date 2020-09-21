@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/form1.css">
+</head>
+<style>
+
+.student_form{
+	margin-left:5%;
+	margin-right:5%;
+}
+
+</style>
+<body>
+
+<div class="everything">
+
+	<a class="logo" href="index.html">
+	<img alt="logo" src="./images/logo.png">
+	</a>
+	<img alt="moto" src="./images/moto.png">
+	<br>
+	<br>
+
+	<form action="search.html">
+		<button type="submit" class="search_button"><i class="fa fa-search"></i> Αναζήτηση Συγγραμμάτων</button>
+	</form>
+	<br>
+	<br>
+	<ul class="navbar">
+		<li><a href="index.html">Αρχική</a></li>
+		<li><a href="news.html">Ανακοινώσεις</a></li>
+		<li><a href="free.html">Διάθεση Δωρεάων Συγραμμάτων</a></li>
+		<li><a href="contact.html">Επικοινωνία</a></li>
+		<li><a href="about_us.html">Μάθετε για Εμάς</a></li>
+	</ul>
+	
+	<ul class="breadcrumb">
+		<li><a href="index.html">Αρχική</a></li>
+		<li><a href="students.html">Φοιτητές</a></li>
+		<li>Εγγραφή Φοιτητή</li>
+	</ul>
+	<!---here-->
+	
+<div class="student_form">
+	<form>
+		<h2>Εγγραφή Φοιτητή</h2>
+		<h3>Στοιχεία του φοιτητή</h3>
+		<div class="row">
+			<div class="col-1">
+				<label for="fname">Όνομα:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="fname" placeholder="π.χ. ΓΕΩΡΓΙΟΣ" required>
+				<p id="fname_err"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="lname">Επώνυμο:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="lname" placeholder="π.χ. ΣΩΤΗΡΙΟΥ" required>
+				<p id="lname_err"></p>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<div class="row">
+			<div class="col-1">
+				<label for="school">Ίδρυμα:</label>
+			</div>
+			<div class="col-2">
+				<select id="idruma" name="idruma" required>
+				<option disabled selected value="item0"> -- επιλέξτε ίδρυμα -- </option>
+				<option value="item1">Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών</option>
+				<option value="item2">Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης</option>
+				<option value="item3">Πανεπιστήμιο Κρήτης</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-1">
+				<label for="sxolh">Σχολή:</label>
+			</div>
+			<div class="col-2">
+				<select id="sxolh">
+					<option value="">-- επιλέξτε σχολή -- </option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="tmhma">Τμήμα:</label>
+			</div>
+			<div class="col-2">
+				<select id="tmhma">
+					<option value="">-- επιλέξτε τμήμα -- </option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="username">Όνομα χρήστη(που σας έχει δοθεί απο τη γραμματεία του τμηματός σας):</label>
+			</div>
+			<div class="col-4">
+				<input type="text" id="username" name="username" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="pw">Κωδικός πρόσβασης(που σας έχει δοθεί απο τη γραμματεία του τμηματός σας):</label>
+			</div>
+			<div class="col-4">
+				<input type="password" id="password" placeholder="Τουλάχιστον 6 χαρακτήρες" required>
+				<p id="password_err"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="email">e-mail:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="email" placeholder="π.χ. example@example.com" required>
+				<p id="email_err"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="phone">Τηλέφωνο:</label>
+			</div>
+			<div class="col-2">
+				<input type="tel" id="tel" placeholder="10 ψηφία" maxlength="10">
+				<p id="tel_err"></p>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<input type="submit" value="Υποβολή">
+		</div>
+		<div class="row">
+			<input type="reset" value="Εκκαθάριση">
+		</div>
+	</form>
+</div>
+<script type="text/javascript" src="./js/stu_form.js"></script>
+	<!------>
+	
+	<br>
+	<br>
+	<img class="img" alt="sponsors2" src="./images/sponsors2.png" height="90",width="100000">
+	<img class="img" alt="sponsors" src="./images/sponsors.png">
+	
+</div>
+</body>
+</html>

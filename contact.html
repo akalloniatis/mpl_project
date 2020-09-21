@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/form1.css">
+</head>
+<style>
+
+.contact{
+	margin-left:5%;
+	margin-right:1%
+}
+.contact form{
+	margin-left:5%;
+	margin-right:5%;
+}
+</style>
+<body>
+
+<div class="everything">
+
+	<a class="logo" href="index.html">
+	<img alt="logo" src="./images/logo.png">
+	</a>
+	<img alt="moto" src="./images/moto.png">
+	<br>
+	<br>
+
+	<form action="search.html">
+		<button type="submit" class="search_button"><i class="fa fa-search"></i> Αναζήτηση Συγγραμμάτων</button>
+	</form>
+	<br>
+	<br>
+	<ul class="navbar">
+		<li><a href="index.html">Αρχική</a></li>
+		<li><a href="news.html">Ανακοινώσεις</a></li>
+		<li><a href="free.html">Διάθεση Δωρεάων Συγραμμάτων</a></li>
+		<li><a class="active"  href="#contact">Επικοινωνία</a></li>
+		<li><a href="about_us.html">Μάθετε για Εμάς</a></li>
+	</ul>
+	
+	<ul class="breadcrumb">
+		<li><a href="index.html">Αρχική</a></li>
+		<li>Επικοινωνία</li>
+	</ul>
+	<!---here-->
+	<div class="contact">
+	<h2>Επικοινωνία</h2>
+	<p> <font size="4">Επικοινωνήστε με το Γραφείο Αρωγής της δράσης:</font><br><br>
+	<font size="3"> Τηλεφωνικά στο <b>215 215 7850</b><br>
+	(ώρες λειτουργίας <b>Δευτέρα με Παρασκευή 09:00 - 17:00</b>)<br><br>
+	Ή μέσω e-mail συμπληρώνοντας την παρακάτω φόρμα:</font></p><br>
+	<form>
+		<div class="row">
+			<div class="col-1">
+				<label for="fname">Όνομα:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="fname" placeholder="π.χ. ΓΕΩΡΓΙΟΣ" required>
+				<p id="fname_err"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="lname">Επώνυμο:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="lname" name="lastname" placeholder="π.χ. ΣΩΤΗΡΙΟΥ" required>
+				<p id="lname_err"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="phone">Τηλέφωνο:</label>
+			</div>
+			<div class="col-2">
+				<input type="tel" id="tel" name="phone" placeholder="10 ψηφία" maxlength="10">
+				<p id="tel_err"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="email">e-mail:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="email" name="email" placeholder="π.χ. example@example.com" required>
+				<p id="email_err"></p>
+			</div>
+		</div>
+		<script src="./js/form.js"></script>
+		<div class="row">
+			<div class="col-1">
+				<label for="pw">Είδος χρήστη:</label>
+			</div>
+			<div class="col-2">
+				<select id="user" name="user" required>
+				<option disabled selected value> -- επιλέξτε την όμαδα χρηστών που ανήκετε -- </option>
+				<option value="foit">Φοιτητής</option>
+				<option value="ekd">Εκδότης</option>
+				<option value="gramm">Γραμματεία</option>
+				<option value="vivliop">Σημείο Διανομής</option>
+				<option value="vivlioth">Βιβλιοθήκη</option>
+				<option value="kath">Καθηγητής</option>
+				<option value="grafeiosugg">Γραφείο Διδακτικών Συγγραμμάτων</option>
+				<option value="mhxanog">Γραφείο Μηχανογράφησης</option>
+				<option value="parag">Υπεύθυνος Παραγγελίας Βιβλίων</option>
+				<option value="allo">Άλλο</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="rep">Είδος αναφοράς:</label>
+			</div>
+			<div class="col-2">
+				<input type="text" id="report" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label for="email">Κείμενο:</label>
+			</div>
+			<div class="col-2">
+				<textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Γράψτε το κείμενο σας εδώ"></textarea required>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<input type="submit" value="Αποστολή">
+		</div>
+		<div class="row">
+			<input type="reset" value="Εκκαθάριση">
+		</div>
+	</form>
+	</div>
+	<script type="text/javascript" src="./js/cont_form.js"></script>
+	<!------>
+	
+	<br>
+	<br>
+	<img class="img" alt="sponsors2" src="./images/sponsors2.png" height="90",width="100000">
+	<img class="img" alt="sponsors" src="./images/sponsors.png">
+	
+</div>
+</body>
+</html>
